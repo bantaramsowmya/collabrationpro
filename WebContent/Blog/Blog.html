@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<div class="container">
+  {{x}}
+  <form>
+    <div class="form-group">
+      <label for="Blog Title">Blog Title:</label>
+      <input ng-model="title" class="form-control" id="title" placeholder="Enter title" name="Blogtitle" >
+    </div>
+    <div class="form-group">
+      <label for="Blog Description">Blog Description:</label>
+      <input ng-model="description" class="form-control" id="description" placeholder="Enter description" name="description">
+    </div>
+    <div class="form-group">
+      <label for="Blog Writtenby">Blog Writtenby:</label>
+      <input ng-model="writtenby" class="form-control" id="writtenby" placeholder="Enter writtenby" name="writtenby">
+    </div>
+    <div class="form-group">
+      <label for="Blog Date">Blog Date:</label>
+      <input ng-model="date_blog" class="form-control" id="date_blog" placeholder="Enter date_blog" name="date_blog">
+    </div>
+    <div class="form-group">
+      <label for="Blog Brief">Blog Brief:</label>
+      <input ng-model="brief" class="form-control" id="brief" placeholder="Enter brief" name="brief">
+    </div>
+    
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <input type="button" class="btn btn-primary" value="send" ng-click="postBlog(title,description,writtenby,date_blog,brief)">
+  </form>
+</div>
+
+
+
+<div>
+<p>Output Message : {{msg}}</p>
+
+<p>StatusCode: {{statusval}}</p>
+
+<p>Status: {{statustext}}</p>
+
+<p>Response Headers: {{headers}}</p>
+</div>
+
+</body>
+</html>
